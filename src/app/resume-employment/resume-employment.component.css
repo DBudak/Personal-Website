@@ -1,0 +1,9 @@
+div.employment-description {
+    font-size: 14px;
+    color: darkgrey;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+div.employment-title{
+    margin-bottom:5px;
+}

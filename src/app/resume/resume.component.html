@@ -1,0 +1,96 @@
+<div class="container main-content">
+  <div class="row">
+      <div class="col-12 text-right">
+        <a href="./assets/Dmitriy Budak-Resume.pdf" download>Download Resume PDF</a>        
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 text-center col-md-4 col-sm-6" >
+      <img class="resumePhoto" src="./assets/resume_photo.jpg">
+    </div>
+    <div class="col-lg-9 col-md-8 col-sm-6 resumeName">
+        <h1 class="display-4 ">Dmitriy Budak</h1>
+        <hr/>
+        Designer / Front End Developer, Brooklyn, NY / Contact Email: dmitriybudak@gmail.com
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 md-text-right">
+      <b>About Me</b>
+    </div>
+    <div class="col-md-10">
+      <p>
+        My coding passion started almost 6 years ago with Java and C++. 
+        Desktop-oriented languages were a good base for me to understand OOP and teach my brains to think code.
+        However I wanted more flexibility.
+        That's when I discovered Web development, where my coding and design skills converge.
+      </p>
+      <p>
+        <i><b>Currently I am looking for Full-time / Part-time Front-End Developer position in New York City area.</b> Interested? <a href="mailto:dmitriybudak@gmail.com">Email Me</a></i>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 md-text-right">
+      <b>Services</b>
+    </div>
+    <div class="col-md-10">
+      <div class="col-12 service-name">
+        UI/UX Design
+      </div>
+      <div class="col-12 service-description">
+        UI/UX design involves planning project's layout and architecture. 
+        After that I design the visual layer to create a seamless user experience.
+      </div>
+      <div class="col-12 service-name">
+        Front End development
+      </div>
+      <div class="col-12 service-description">
+        Front End development is a process of building the visual and structural components of a project.
+        I use the combination of HTML, CSS and JavaScript to build fast, responsive and user-friendly websites. 
+        Depending on the project, I may use a CMS or cutting-edge technology as Angular 2.
+      </div>
+      <div class="col-12 service-name">
+        Web Application Development
+      </div>
+      <div class="col-12 service-description">
+        Web Application Development is a process of building desktop-like web applications. 
+        No web page re-loading, instant user interface response, easy testing and version control makes this one of my favorites.
+        I use Angular 2,React.js or Backbone.js and Git to achieve a perfect result.
+      </div>            
+    </div>
+  </div>  
+  <div class="row">
+    <div class="col-md-2 md-text-right">
+      <b>Skills</b>
+    </div>          
+    <div class="col-md-10">
+      <app-resume-skill
+       *ngFor="let skill of coreSkills"
+       [skill]="skill"
+      ></app-resume-skill>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2 md-text-right">
+      <b>Experience</b>
+    </div>
+    <div class="col-md-10">
+      <app-resume-employment
+      *ngFor="let employment of employments"
+      [employment]="employment"
+      ></app-resume-employment>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col-md-2 md-text-right">
+      <b>Education</b>
+    </div>
+    <div class="col-md-10">
+      <app-resume-education
+      *ngFor="let education of educations"
+      [education]="education"
+      ></app-resume-education>
+    </div>  
+  </div>  
+</div>

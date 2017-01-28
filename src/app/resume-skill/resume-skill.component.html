@@ -1,0 +1,15 @@
+<div class="row skill-row">
+  <div class="col-md-2 col-sm-5 md-text-right">
+    {{skill.name}}
+  </div>
+  <div class="col-md-8 col-sm-6">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" [style.width.%]="skill.level*10" [attr.aria-valuenow]="skill.level" aria-valuemin="0" aria-valuemax="10"></div>
+    </div>
+  </div>
+  <div class="col-md-2 col-sm-1 text-left">
+    {{skill.level}} / 10
+  </div>
+</div>
+
+

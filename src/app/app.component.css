@@ -1,0 +1,28 @@
+.nav-container{
+    border-bottom:1px solid #ddd;
+    padding: 10px;
+}
+a.nav-link {
+    font-size: 21px;
+    color: #292b2c;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid white;
+}
+.nav-link{
+    padding:0;
+    margin: 0.5em 1em;
+}
+a.nav-link.active {
+    border-bottom-color:#292b2c;
+}
+a.nav-link:hover{
+    border-bottom-color:#292b2c;
+}
+a.nav-link.active:hover{
+    cursor:default;
+}
+.footer-container {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}

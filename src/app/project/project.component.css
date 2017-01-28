@@ -1,0 +1,23 @@
+.image-container {
+    background: #f0eeef;
+    border: 1px solid hsla(330, 6%, 85%, 1);
+    padding: 10px;
+}
+.job-done {
+    text-transform: uppercase;
+    color: #31708f;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.description {
+    font-style: italic;
+}
+hr.projectdivider {
+    margin: 3rem;
+}
+@media screen and (max-width: 768px){
+    .offset-md-1 {
+        padding: 0 40px;
+    }
+
+}

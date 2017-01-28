@@ -1,0 +1,39 @@
+img.resumePhoto {
+    border-radius: 500px;
+}
+.resumeName {
+    padding-top: 20px;
+}
+.row {
+    padding: 20px 0;
+}
+.container.main-content{
+    padding-bottom: 150px;
+}
+.service-name {
+    text-transform: uppercase;
+    color: #31708f;
+    font-weight: bold;
+}
+.service-description {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.additional-skills {
+    font-size: 14px;
+}
+.md-text-right{
+    text-align:right;
+}
+@media screen and (max-width: 768px){
+    .resumeName {
+        text-align:center;
+    }
+    .text-right{
+        text-align:left;
+    }
+    .md-text-right{
+        text-align:left;
+        padding-bottom:20px;
+    }
+}

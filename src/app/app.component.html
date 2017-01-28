@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container nav-container">
+  <nav class="nav">
+    <a class="nav-link"
+    routerLink='/resume' routerLinkActive="active" >Resume</a>
+    <a class="nav-link"
+    routerLink='/projects' routerLinkActive="active" >Projects</a>
+    <a class="nav-link"
+    href='https://github.com/DBudak' target="_blank" >GitHub</a>
+  </nav>
+</div>
+<router-outlet></router-outlet>
+<footer class="container footer-container">
+  <div class="row">
+    <div class="col-6">
+      Copyright Dmitriy Budak
+    </div>
+    <div class="col-6 text-right">
+      Built using Angular 2
+    </div>
+  </div>
+</footer>
